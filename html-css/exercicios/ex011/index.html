@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinânicas</h1>
+    <p>Tente abrir este sites em vários dispositivos diferenets ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Foto Flexivel"> 
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/lazyboys.mp3" controls autoplay></audio>
+
+    <!--Esse autoplay apos o controls faz o arquivo de mp3 tocar automaticamente-->
+    
+<p>Esta forma abaixo é otra forma de abrir um arquivo de midia audio, so que ele é mais completo</p>
+<audio preload="metadata" controls>
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg"> <!--Para audios em mp3-->
+    <source src="midia/happy-mistake.ogg" type="audio/ogg"> <!--Para audios em ogg-->
+    <source src="midia/happy-mistake.mp3" type="audio/wav"> <!--Para audios em WAV-->
+</audio>
+
+<p>Se seu navegador nao conseguiu abrir o audio, ele nao é compatível e voce pode ouvi-lo clicando <a href="midia/happy-mistake.mp3" target="_blank" rel="external">aqui</a>, no formato MP3</p>
+
+<p>Mas se voce realmente quiser baixar o aquivo, clique <a href="midia/happy-mistake.mp3" download="happy-mistake.mp3" type="application/mp3" target="_blank" >AQUI</a> que ele ira baixo-lo para o seu PC</p>
+
+
+
+</body>
+</html>
