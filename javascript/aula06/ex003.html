@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa em JavaScript</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(58, 192, 192);
+            color: beige;
+            font: 1em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!!</h1>
+    <p>Já me livrei da maldição!!</p>
+
+    <script>
+         var n1 = Number.parseInt(window.prompt('Digite um número: ')) //Number.parseInt ja converte o valor string para o valor number (Nesse caso numero inteiro)
+         var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) //Number.parseFloat ja converte o valor string para o valor number nesse caso Nuemro Real (com virgula)
+
+         var n3 = Number(window.prompt('Digite outro número: ')) //Number também converte em número sem precisar indicar se é inteiro ou real, pois ele automaticamente o identifica
+         
+        var s = n1 + n2 + n3
+
+         window.alert('A soma dos valores é ' + s)
+
+
+         // (numeber + number) para adição
+         // (string + string) para concatenacao
+
+    </script>
+
+</body>
+</html>
